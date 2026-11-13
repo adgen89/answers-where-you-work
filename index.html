@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Ari Damasco — a fictional knowledge assistant demo inspired by real Copilot design work at Momentive.">
+<title>Answers Where You Work · Ari Damasco</title>
+<style>
+:root{color-scheme:light;--paper:#f6f3eb;--ink:#203a35;--muted:#52645c;--line:#c9d0c4;--accent:#d9e8b5}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit;text-underline-offset:4px}a:hover{color:#43652c}button{font:inherit}button,a,summary{touch-action:manipulation}:focus-visible{outline:3px solid #785010;outline-offset:5px}.skip{position:absolute;left:16px;top:-80px;background:white;padding:10px;z-index:3}.skip:focus{top:12px}.wrap{max-width:1080px;margin:auto;padding:0 32px}header{display:flex;justify-content:space-between;gap:20px;padding-top:28px;padding-bottom:24px;border-bottom:1px solid var(--line);font-size:13px}header strong{font-weight:650}header span{color:var(--muted)}.hero{padding:64px 0 42px;max-width:800px}.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:750;color:var(--muted)}h1,h2,h3,p{margin-top:0}h1{font:400 clamp(48px,7vw,82px)/1.02 Georgia,serif;letter-spacing:-.045em;margin:16px 0 24px;max-width:740px}.intro{font-size:19px;max-width:660px;line-height:1.6}.context{font-size:14px;color:var(--muted);max-width:710px}.demo{border:1px solid var(--line);background:#fffef9;border-radius:4px;overflow:hidden}.demo-top{padding:17px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.label{font-size:12px;background:var(--accent);padding:5px 10px;border-radius:20px;font-weight:650}.workbench{display:grid;grid-template-columns:300px 1fr}.scenarios{background:#edf0e7;padding:24px;border-right:1px solid var(--line)}.scenarios p{font-size:13px;color:var(--muted)}.scenario{width:100%;display:block;text-align:left;background:transparent;color:var(--ink);border:1px solid transparent;border-top-color:var(--line);padding:18px 12px;cursor:pointer;line-height:1.4}.scenario small{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:5px}.scenario[aria-pressed="true"]{background:var(--ink);color:white;border-radius:3px;border-color:var(--ink)}.scenario:hover:not([aria-pressed="true"]){background:#dfe6d6}.response{padding:30px 34px;min-height:405px}.question{font:400 25px/1.3 Georgia,serif;margin:0 0 25px}.status{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}#answer h3{font-size:17px;margin-bottom:8px}#answer p,#answer ol{font-size:15px}#answer ol{padding-left:21px}#answer li{padding:2px 0}.source{padding-top:15px;border-top:1px solid var(--line);font-size:12px;margin-bottom:0}.library{margin:22px 0 46px;font-size:14px}summary{cursor:pointer;padding:10px 0;font-weight:650}.library-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:16px 0}.library article{border-top:1px solid var(--line);padding-top:16px;scroll-margin-top:24px}.library h3{font-size:14px;margin-bottom:8px}.library p{font-size:13px;color:var(--muted);margin-bottom:8px}.behind{border-top:1px solid var(--line);padding:32px 0 48px;display:grid;grid-template-columns:1fr 2fr;gap:36px}.behind h2{font:400 30px/1.2 Georgia,serif}.principles{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.principles h3{font-size:14px;margin-bottom:8px}.principles p{font-size:13px;color:var(--muted)}footer{border-top:1px solid var(--line);padding:20px 0 30px;font-size:12px;color:var(--muted)}@media(max-width:720px){.wrap{padding:0 20px}.hero{padding-top:40px}.workbench{grid-template-columns:1fr}.scenarios{border-right:0;border-bottom:1px solid var(--line);padding:18px}.scenario{padding:12px}.response{padding:24px;min-height:0}.behind{grid-template-columns:1fr;gap:12px}.principles,.library-grid{grid-template-columns:1fr;gap:14px}header{font-size:12px}.intro{font-size:17px}}@media(prefers-reduced-motion:no-preference){button{transition:background .15s,color .15s}}
+</style>
+</head>
+<body>
+<a class="skip" href="#demo">Skip to demo</a>
+<div class="wrap">
+<header><strong>Ari Damasco</strong><span>Knowledge design / Interactive portfolio</span></header>
+<main>
+<section class="hero" aria-labelledby="title">
+<div class="eyebrow">AI enablement · Knowledge management</div>
+<h1 id="title">Answers where<br>you work.</h1>
+<p class="intro">Useful knowledge is more than a document. It’s a clear next step, a relevant source, and the judgment to know when to ask for help.</p>
+<p class="context">At Momentive, I designed a Copilot knowledge assistant supporting procedural questions and technical troubleshooting. This independent, fictional demo illustrates that kind of experience; it is not the original system and contains no proprietary materials.</p>
+</section>
+<section class="demo" id="demo" aria-label="Fictional knowledge assistant">
+<div class="demo-top"><strong>Fieldwork / Knowledge desk</strong><span class="label">Rule-based simulation, not live AI</span></div>
+<div class="workbench">
+<nav class="scenarios" aria-label="Choose a scenario">
+<div class="eyebrow">Try a question</div><p>Three situations. Three response patterns.</p>
+<button class="scenario" data-scenario="howto" aria-pressed="true" aria-controls="answer"><small>01 / Find the steps</small>How do I request project access?</button>
+<button class="scenario" data-scenario="trouble" aria-pressed="false" aria-controls="answer"><small>02 / Diagnose a problem</small>Why won’t my report export?</button>
+<button class="scenario" data-scenario="unknown" aria-pressed="false" aria-controls="answer"><small>03 / Know the limit</small>Can I restore a deleted workspace?</button>
+</nav>
+<div class="response"><p class="status">Fictional employee question</p><h2 class="question" id="question">How do I request project access?</h2><div id="answer" role="region" aria-label="Assistant response" aria-live="polite" aria-atomic="true"></div><noscript><p>Enable JavaScript to try the three preset responses. The fictional source library below remains available.</p></noscript></div>
+</div>
+</section>
+<details class="library" id="library"><summary>Inspect the fictional knowledge library · 3 short notes</summary>
+<div class="library-grid">
+<article id="source-access"><h3>K01 / Project access</h3><p>Owner: Workplace Operations · v1.0</p><p>Open Service Desk → Access request. Include the project name, requested role, and business reason. Submit for project-owner approval. Track the request in My requests.</p></article>
+<article id="source-export"><h3>K02 / Report exports</h3><p>Owner: Application Support · v1.0</p><p>If an export does not download, check for a blocked-download notice and allow the download for the reporting site only. If the report times out, retry with a shorter date range. If it still fails, send Support the error text, time, and report name; omit report contents.</p></article>
+<article id="source-escalate"><h3>K03 / Support handoff</h3><p>Owner: Service Desk · v1.0</p><p>Workspace recovery is not documented in this library. Ask Service Desk to confirm whether recovery is available. Provide the workspace name and approximate deletion time. Never share passwords or sensitive records.</p></article>
+</div></details>
+<section class="behind" aria-labelledby="behind"><h2 id="behind">Behind the Design</h2><div class="principles"><div><h3>Organize for the task.</h3><p>Small, task-focused notes with clear owners and versions make answers easier to trace and maintain.</p></div><div><h3>Guide the response.</h3><p>Use steps for procedures, bounded checks for troubleshooting, and a source with every answer.</p></div><div><h3>Set a safe boundary.</h3><p>Say when knowledge is missing. Offer a specific handoff, avoid unsupported promises, and keep sensitive data out.</p></div></div></section>
+</main><footer>Ari Damasco · Answers Where You Work · All Fieldwork scenarios and sources are fictional. No messages are sent or stored.</footer>
+</div>
+<script>
+const scenarios = {
+ howto: { question: 'How do I request project access?', html: '<h3>Start with an access request.</h3><ol><li>Open <strong>Service Desk → Access request</strong>.</li><li>Add the project name, the role you need, and a brief business reason.</li><li>Submit for project-owner approval. Follow its status in <strong>My requests</strong>.</li></ol><p class="source">Source: <a href="#source-access">K01 · Project access, v1.0</a></p>' },
+ trouble: { question: 'Why won’t my report export?', html: '<h3>First, check how the export fails.</h3><ol><li><strong>No download?</strong> Look for a blocked-download notice in your browser. Allow the download for the reporting site only, then retry.</li><li><strong>Report times out?</strong> Retry with a shorter date range.</li></ol><p>Still failing? Send Application Support the error text, time, and report name. Leave out report contents.</p><p class="source">Source: <a href="#source-export">K02 · Report exports, v1.0</a></p>' },
+ unknown: { question: 'Can I restore a deleted workspace?', html: '<h3>I don’t have a documented recovery procedure.</h3><p>This library does not say whether a deleted workspace can be restored, so I can’t confirm recovery or give you reliable steps.</p><p>Ask <strong>Service Desk</strong> to confirm the available options. Include the workspace name and approximate deletion time; don’t include passwords or sensitive records.</p><p class="source">Handoff reference: <a href="#source-escalate">K03 · Support handoff, v1.0</a> · No recovery procedure available.</p>' }
+};
+function selectScenario(key) {
+ const scenario = scenarios[key];
+ document.getElementById('question').textContent = scenario.question;
+ document.getElementById('answer').innerHTML = scenario.html;
+ document.querySelectorAll('[data-scenario]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.scenario === key)));
+}
+document.querySelectorAll('[data-scenario]').forEach(button => button.addEventListener('click', () => selectScenario(button.dataset.scenario)));
+document.getElementById('answer').addEventListener('click', event => {
+ const link = event.target.closest('a');
+ if (link) document.getElementById('library').open = true;
+});
+selectScenario('howto');
+</script>
+</body>
+</html>
